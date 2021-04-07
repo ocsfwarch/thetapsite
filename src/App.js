@@ -8,6 +8,7 @@ import {
 import {Header} from './components/Header';
 import {Main}   from './components/Main';
 import {Projects} from './components/Projects';
+import {AboutMe} from './components/AboutMe';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             )}
           />
           <Route exact path="/Projects" component={Projects} />
+          <Route path="/AboutMe" component={AboutMe} />
           <Redirect to="/" />
         </Switch>
         </div>

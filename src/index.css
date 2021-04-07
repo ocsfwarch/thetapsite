@@ -493,6 +493,49 @@
             .show > .btn-danger.dropdown-toggle:focus {
               box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); }
         
+  /* AboutMe */
+  .aboutme_container{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items:center;
+    height:100%;
+    width: 100%;
+    background-color:skyblue;
+    padding-top:5px;
+  }
+
+  .aboutme_container .img_sect{
+    flex: 1 1 auto;
+    height: 30%;
+    width: 50%;
+    background-color:green;
+  }
+
+  .aboutme_container .img_sect .img_display{
+    flex: 1 1 auto;
+    display:flex;
+    align-items: center;
+    height:100%;
+    width: 100%;
+    background-color:transparent;
+  }
+
+  .aboutme_container .intro_sect{
+    flex: 1 1 auto;
+    height: 60%;
+    width: 100%;
+    background-color:lightpink;
+
+  }
+
+  .aboutme_container .footer_sect{
+    flex: 0 0 auto;
+    height: 2em;
+    width: 100%;
+    background-color:seagreen;
+
+  }
           
 /*****************/
   
