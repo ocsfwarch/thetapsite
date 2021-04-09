@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="projects_container"
+>
+  <div
+    className="project_container"
+  >
+    <section
+      className="project_title"
+    >
+      <a
+        href="https://www.chatcorenews.com"
+        target="_blank"
+        title="Click to show the app"
+      >
+        CHAT Core News
+      </a>
+    </section>
+    <section
+      className="project_image"
+    >
+      <section
+        className="project_image_container"
+      >
+        <img
+          src="/images/Projects/chatcorenews_screenshot_desktop.png"
+        />
+      </section>
+    </section>
+    <section
+      className="project_summary"
+    >
+      <p>
+        This is an RSS feed aggregator service. 
+      </p>
+      <p>
+        <img
+          alt="css icon"
+          src="/images/Techs/css.png"
+          title="CSS 3"
+        />
+        <img
+          alt="html icon"
+          src="/images/Techs/html.png"
+          title="HTML 5"
+        />
+        <img
+          alt="react icon"
+          src="/images/Techs/react.png"
+          title="React"
+        />
+        <img
+          alt="js icon"
+          src="/images/Techs/js.png"
+          title="JavaScript"
+        />
+        <img
+          alt="postgres icon"
+          src="/images/Techs/postgresql.png"
+          title="PostgreSQL"
+        />
+        <img
+          alt="npm icon"
+          src="/images/Techs/npm.png"
+          title="npm"
+        />
+      </p>
+    </section>
+    <section
+      className="project_footer"
+    >
+      <button
+        className="btn btn-primary"
+        onClick={[Function]}
+        type="button"
+      >
+        Visit App
+      </button>
+    </section>
+  </div>
+  <div
+    className="project_container"
+  >
+    <section
+      className="project_title"
+    >
+      <a
+        href="https://ocsfwarch.com/ocsatext/"
+        target="_blank"
+        title="Click to show the app"
+      >
+        OCSA Text
+      </a>
+    </section>
+    <section
+      className="project_image"
+    >
+      <section
+        className="project_image_container"
+      >
+        <img
+          src="/images/Projects/text_screenshot.png"
+        />
+      </section>
+    </section>
+    <section
+      className="project_summary"
+    >
+      <p>
+        This is a secure text application
+      </p>
+      <p>
+        <img
+          alt="css icon"
+          src="/images/Techs/css.png"
+          title="CSS 3"
+        />
+        <img
+          alt="html icon"
+          src="/images/Techs/html.png"
+          title="HTML 5"
+        />
+        <img
+          alt="react icon"
+          src="/images/Techs/react.png"
+          title="React"
+        />
+        <img
+          alt="js icon"
+          src="/images/Techs/js.png"
+          title="JavaScript"
+        />
+        <img
+          alt="postgres icon"
+          src="/images/Techs/postgresql.png"
+          title="PostgreSQL"
+        />
+        <img
+          alt="npm icon"
+          src="/images/Techs/npm.png"
+          title="npm"
+        />
+      </p>
+    </section>
+    <section
+      className="project_footer"
+    >
+      <button
+        className="btn btn-primary"
+        onClick={[Function]}
+        type="button"
+      >
+        Visit App
+      </button>
+    </section>
+  </div>
+  <div
+    className="project_container"
+  >
+    <section
+      className="project_title"
+    >
+      <a
+        href="https://ocsfwarch.com/ocsatracker/"
+        target="_blank"
+        title="Click to show the app"
+      >
+        OCSA Tracker
+      </a>
+    </section>
+    <section
+      className="project_image"
+    >
+      <section
+        className="project_image_container"
+      >
+        <img
+          src="/images/Projects/tracker_screenshot.png"
+        />
+      </section>
+    </section>
+    <section
+      className="project_summary"
+    >
+      <p>
+        This is a vehicle maintenance tracking application
+      </p>
+      <p>
+        <img
+          alt="css icon"
+          src="/images/Techs/css.png"
+          title="CSS 3"
+        />
+        <img
+          alt="html icon"
+          src="/images/Techs/html.png"
+          title="HTML 5"
+        />
+        <img
+          alt="react icon"
+          src="/images/Techs/react.png"
+          title="React"
+        />
+        <img
+          alt="js icon"
+          src="/images/Techs/js.png"
+          title="JavaScript"
+        />
+        <img
+          alt="postgres icon"
+          src="/images/Techs/postgresql.png"
+          title="PostgreSQL"
+        />
+        <img
+          alt="npm icon"
+          src="/images/Techs/npm.png"
+          title="npm"
+        />
+      </p>
+    </section>
+    <section
+      className="project_footer"
+    >
+      <button
+        className="btn btn-primary"
+        onClick={[Function]}
+        type="button"
+      >
+        Visit App
+      </button>
+    </section>
+  </div>
+  <div
+    className="project_container"
+  >
+    <section
+      className="project_title"
+    >
+      <a
+        href="https://ocsfwarch.com/handyman/"
+        target="_blank"
+        title="Click to show the app"
+      >
+        Flagstaff HandyMan Services
+      </a>
+    </section>
+    <section
+      className="project_image"
+    >
+      <section
+        className="project_image_container"
+      >
+        <img
+          src="/images/Projects/handyman_screenshot.png"
+        />
+      </section>
+    </section>
+    <section
+      className="project_summary"
+    >
+      <p>
+        This is an example of a basic services advertising web site.
+      </p>
+      <p>
+        <img
+          alt="css icon"
+          src="/images/Techs/css.png"
+          title="CSS 3"
+        />
+        <img
+          alt="html icon"
+          src="/images/Techs/html.png"
+          title="HTML 5"
+        />
+        <img
+          alt="react icon"
+          src="/images/Techs/react.png"
+          title="React"
+        />
+        <img
+          alt="js icon"
+          src="/images/Techs/js.png"
+          title="JavaScript"
+        />
+        <img
+          alt="postgres icon"
+          src="/images/Techs/postgresql.png"
+          title="PostgreSQL"
+        />
+        <img
+          alt="npm icon"
+          src="/images/Techs/npm.png"
+          title="npm"
+        />
+      </p>
+    </section>
+    <section
+      className="project_footer"
+    >
+      <button
+        className="btn btn-primary"
+        onClick={[Function]}
+        type="button"
+      >
+        Visit App
+      </button>
+    </section>
+  </div>
+</div>
+`;
