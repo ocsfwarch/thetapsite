@@ -614,7 +614,7 @@ img {
   border: 1px skyblue solid;
 }
 
-.aboutme_container .aboutme_footer {
+.aboutme_footer {
   flex: 0 0 auto;
   height: 4em;
   width: 100%;
@@ -636,9 +636,6 @@ img {
 
 /* Skills */
 .skills_list {
-  flex: 1 1 auto;
-  background-color: transparent;
-  width: 100%;
 }
 
 .skills_list ul {
@@ -670,6 +667,66 @@ img {
   font: 1.7em "librebaskerville-regular", serif;
   color: #00006f;
   text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+}
+
+/* Education */
+.education_container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 5px;
+  background-color: lightcyan;
+}
+
+.education_card_container {
+  flex: 1 1 auto;
+  display: flex;
+  /*height: 80%;*/
+  width: 100vw;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid lightskyblue;
+}
+
+.education_card {
+  /*flex: 1 1 auto;*/
+  height: 10em;
+  width: 22em;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 1px solid gray;
+  background-color: white;
+  /*box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.1);*/
+  box-shadow: 5px 5px 5px 3px #808080;
+}
+
+.education_card .span1 {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #00006f;
+  text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+}
+
+.education_card .span2 {
+  font-size: 1.15em;
+  text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+}
+
+.education_card .span3 {
+  font-size: 1em;
+  text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+}
+
+.education_card .csuf_image_container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.education_card .csuf_image {
+  height: 5em;
+  width: 5em;
 }
 
 @media (min-width: 600px) {
