@@ -22,7 +22,7 @@ const SkillsList = () => {
       <ul>
         {skills.map((item, idx) => (
           <li key={idx}>
-            <img src={item.image} />
+            <img src={item.image} alt={item.text} />
             <span>{item.text}</span>
           </li>
         ))}

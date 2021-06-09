@@ -21,9 +21,9 @@ const AboutMe = () => {
             2 years my primary focus for frontend and backend development has
             been the PostgreSQL, Express, React, and Node (PERN) stack. I love
             the creative process associated with developing software and the
-            constant advances in software development and engineering
-            technologioes. It allows me to build applications that help people
-            and it feeds my need for continuous improvement.
+            constant advances in software development technologies. These allow
+            me to build applications that help people and it feeds my need for
+            continuous improvement.
           </p>
         </section>
       </section>
