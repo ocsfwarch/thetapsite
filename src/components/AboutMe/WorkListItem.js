@@ -14,7 +14,6 @@ function WorkListItem({ item }) {
       newDisplay = "test";
       const tempScroll = document.getElementById(`work_list_item_${item.id}`);
       if (tempScroll) {
-        console.log(`SCROLLING`);
         tempScroll.scrollIntoView(true);
       }
     }
