@@ -674,13 +674,6 @@ img {
 }
 
 /* Education */
-.education_container {
-  display: flex;
-  flex-flow: column nowrap;
-  padding-top: 5px;
-  background-color: lightcyan;
-}
-
 .education_card_container {
   flex: 1 1 auto;
   display: flex;
@@ -695,8 +688,8 @@ img {
 
 .education_card {
   /*flex: 1 1 auto;*/
-  height: 10em;
-  width: 22em;
+  height: 10.5em;
+  width: 19em;
   padding: 1em;
   border-radius: 0.5em;
   border: 1px solid gray;
@@ -739,6 +732,11 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+  }
+
+  .education_card {
+    /*flex: 1 1 auto;*/
+    width: 22em;
   }
 }
 
