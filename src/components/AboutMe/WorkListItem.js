@@ -12,6 +12,11 @@ function WorkListItem({ item }) {
       // Add the display content
       newDisplay = formatDisplay();
       newDisplay = "test";
+      const tempScroll = document.getElementById(`work_list_item_${item.id}`);
+      if (tempScroll) {
+        console.log(`SCROLLING`);
+        tempScroll.scrollIntoView(true);
+      }
     }
     setDetails({
       ...details,
@@ -30,6 +35,7 @@ function WorkListItem({ item }) {
 
   return (
     <div
+      id={`work_list_item_${item.id}`}
       className={
         details.showMore
           ? "work_history_card work_history_card_expand"
@@ -43,37 +49,31 @@ function WorkListItem({ item }) {
       <span>{item.job_title}</span>
       <div id="worklistdetails" className={details.showMore ? "visible" : ""}>
         <h1>Accomplishments</h1>
-        {details.showMore ? (
+        {
           <ul>
             {item.accomplishments.map((accomplishment, idx) => {
               return <li key={idx}>{accomplishment}</li>;
             })}
           </ul>
-        ) : (
-          ""
-        )}
+        }
         <h1>Responsibilities</h1>
         {details.showMore ? <span>{item.responsibilities}</span> : ""}
         <h1>Skills</h1>
-        {details.showMore ? (
+        {
           <ul>
             {item.skills.map((skill, idx) => {
               return <li key={idx}>{skill}</li>;
             })}
           </ul>
-        ) : (
-          ""
-        )}
+        }
         <h1>Tools</h1>
-        {details.showMore ? (
+        {
           <ul>
             {item.tools.map((tool, idx) => {
               return <li key={idx}>{tool}</li>;
             })}
           </ul>
-        ) : (
-          ""
-        )}
+        }
       </div>
       <span>
         <button name={item.id} onClick={showDetails}>

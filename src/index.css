@@ -622,6 +622,10 @@ img {
 }
 
 @media (min-width: 600px) {
+  .aboutme_container {
+    overflow: hidden;
+  }
+
   .aboutme_container .aboutme_content {
     flex-flow: row nowrap;
   }
@@ -760,6 +764,7 @@ img {
 }
 
 .work_history_card {
+  flex: 1 1 auto;
   display: flex;
   flex-flow: column nowrap;
   height: 10em;
@@ -770,6 +775,26 @@ img {
   border-radius: 0.5em;
   border: 1px solid lightskyblue;
   transition: all 1s linear;
+}
+
+.work_history_card_title {
+  flex: 1 1 auto;
+  height: 3em;
+  width: 100%;
+  background-color: red;
+}
+
+.work_history_card_display {
+  flex: 1 1 0;
+  width: 100%;
+  background-color: yellow;
+}
+
+.work_history_card_controls {
+  flex: 0 0 auto;
+  line-height: 1.25em; /* 20 / 16 */
+  width: 100%;
+  background-color: skyblue;
 }
 
 .work_history_card_expand {
@@ -805,9 +830,9 @@ img {
 
 #worklistdetails {
   overflow: hidden; /* Hide the element content, while height = 0 */
-  height: 0;
+  height: 0.0000001;
   opacity: 0;
-  transition: height 0ms 500s, opacity 500s 0ms;
+  transition: height 1s 0ms, opacity 0ms 1s;
 }
 #worklistdetails.visible {
   overflow: auto;
