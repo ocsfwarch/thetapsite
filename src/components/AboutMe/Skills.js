@@ -5,8 +5,8 @@ import { SkillsList } from "./SkillsList";
 const Skills = () => {
   return (
     <section className="aboutme_container">
-      <SkillsList />
       <AboutMeNav />
+      <SkillsList />
     </section>
   );
 };

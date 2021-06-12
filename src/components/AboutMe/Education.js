@@ -4,6 +4,7 @@ import { AboutMeNav } from "./AboutMeNav";
 const Education = () => {
   return (
     <section className="aboutme_container">
+      <AboutMeNav />
       <section className="education_card_container">
         <section className="education_card">
           <div>
@@ -44,7 +45,6 @@ const Education = () => {
           </div>
         </section>
       </section>
-      <AboutMeNav />
     </section>
   );
 };

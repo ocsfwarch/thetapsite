@@ -4,6 +4,7 @@ import { AboutMeNav } from "./AboutMeNav";
 const AboutMe = () => {
   return (
     <div className="aboutme_container">
+      <AboutMeNav />
       <section className="aboutme_content">
         <section className="img_sect">
           <section className="img_display">
@@ -27,7 +28,6 @@ const AboutMe = () => {
           </p>
         </section>
       </section>
-      <AboutMeNav />
     </div>
   );
 };

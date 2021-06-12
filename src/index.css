@@ -578,6 +578,7 @@ img {
   align-items: center;
   width: 100%;
   background-color: white;
+  border-top: 1px solid lightskyblue;
 }
 
 .aboutme_container .aboutme_content .img_sect {
@@ -614,11 +615,10 @@ img {
   border: 1px skyblue solid;
 }
 
-.aboutme_footer {
+.aboutme_menu_display {
   flex: 0 0 auto;
   height: 4em;
   width: 100%;
-  background-color: seagreen;
 }
 
 @media (min-width: 600px) {
@@ -683,7 +683,7 @@ img {
   justify-content: space-evenly;
   align-items: center;
   background-color: white;
-  border-bottom: 1px solid lightskyblue;
+  border-top: 1px solid lightskyblue;
 }
 
 .education_card {
@@ -759,6 +759,7 @@ img {
   width: 100%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  border-top: 1px solid lightskyblue;
 }
 
 .work_history_card {

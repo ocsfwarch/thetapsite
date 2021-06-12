@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMeNav = () => {
   return (
-    <section className="aboutme_footer">
+    <section className="aboutme_menu_display">
       <section className="app_header_menu">
         <nav className="navContent">
           <section>
