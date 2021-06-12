@@ -1,52 +1,81 @@
 import { useState } from "react";
 
 function WorkListItem({ item }) {
-  const [details, setDetails] = useState({ showMore: false, display: "" });
+  const [showMore, setShowMore] = useState(true);
+  const [display, setDisplay] = useState("");
 
   const showDetails = async () => {
-    let newDisplay = "";
-    if (details.showMore) {
-      // Remove the displayed content
-      newDisplay = "";
+    if (showMore) {
+      setDisplay(formatDisplay());
     } else {
-      // Add the display content
-      newDisplay = formatDisplay();
-      newDisplay = "test";
-      const tempScroll = document.getElementById(`work_list_item_${item.id}`);
-      if (tempScroll) {
-        tempScroll.scrollIntoView(true);
-      }
+      setDisplay("");
     }
-    setDetails({
-      ...details,
-      ["showMore"]: !details.showMore,
-      ["display"]: newDisplay,
-    });
+    setShowMore(!showMore);
+    const tempWorkListItem = document.getElementById(
+      `work_list_item_${item.id}`
+    );
+    if (tempWorkListItem) {
+      console.log(`Scrolling`);
+      tempWorkListItem.scrollIntoView();
+    }
   };
 
   const formatDisplay = async () => {
-    const accomplishments = item.accomplishments.map((item) => {
-      return <li>{item}</li>;
+    const accomplishments = item.accomplishments.map((accomplishment, idx) => {
+      return <li key={idx}>{accomplishment}</li>;
     });
+    const sectionAccomplishments = <ul>{accomplishments}</ul>;
 
-    return accomplishments;
+    const responsibilities = <span>{item.responsibilities}</span>;
+    const sectionResponsibilities = <ul>{responsibilities}</ul>;
+
+    const skills = item.skills.map((skill, idx) => {
+      return <li key={idx}>{skill}</li>;
+    });
+    const sectionSkills = <ul>{skills}</ul>;
+
+    const tools = item.tools.map((tool, idx) => {
+      return <li key={idx}>{tool}</li>;
+    });
+    const sectionTools = <ul>{tools}</ul>;
+
+    return (
+      <>
+        {sectionAccomplishments}
+        {sectionResponsibilities}
+        {sectionSkills}
+        {sectionTools}
+      </>
+    );
   };
 
   return (
     <div
       id={`work_list_item_${item.id}`}
       className={
-        details.showMore
-          ? "work_history_card work_history_card_expand"
-          : "work_history_card"
+        showMore
+          ? "work_history_card"
+          : "work_history_card work_history_card_expand"
       }
     >
-      <span>
-        {item.company_name} [From: {item.job_start_date} To:{" "}
-        {item.job_stop_date}]
-      </span>
-      <span>{item.job_title}</span>
-      <div id="worklistdetails" className={details.showMore ? "visible" : ""}>
+      <section id="workListItemTitle">
+        <section>
+          <span className="work_history_company_name">
+            <a href={item.company_url} target="blank" title={item.company_url}>
+              {item.company_name}
+            </a>
+          </span>{" "}
+          [From:{" "}
+          <span className="work_history_job_date">{item.job_start_date}</span>{" "}
+          To:{" "}
+          <span className="work_history_job_date">{item.job_stop_date}</span>]
+          <span className={showMore ? "display_none" : "display_all"}>
+            {item.company_location}
+          </span>
+        </section>
+      </section>
+      <span className="work_history_job_title">{item.job_title}</span>
+      <section id="worklistdetails" className={showMore ? "" : "visible"}>
         <h1>Accomplishments</h1>
         {
           <ul>
@@ -56,7 +85,7 @@ function WorkListItem({ item }) {
           </ul>
         }
         <h1>Responsibilities</h1>
-        {details.showMore ? <span>{item.responsibilities}</span> : ""}
+        {showMore ? "" : <span>{item.responsibilities}</span>}
         <h1>Skills</h1>
         {
           <ul>
@@ -73,10 +102,18 @@ function WorkListItem({ item }) {
             })}
           </ul>
         }
-      </div>
-      <span>
-        <button name={item.id} onClick={showDetails}>
-          {details.showMore ? "Show Less" : "Show More"}
+      </section>
+      <span className="work_history_show_control">
+        <button
+          className={
+            showMore
+              ? "work_history_show_more_btn"
+              : "work_history_show_less_btn"
+          }
+          name={item.id}
+          onClick={showDetails}
+        >
+          {showMore ? "Show More" : "Show Less"}
         </button>
       </span>
     </div>
