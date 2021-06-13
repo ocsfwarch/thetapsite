@@ -621,6 +621,10 @@ img {
   width: 100%;
 }
 
+.aboutme_menu_display .navLinks {
+  text-align: center;
+}
+
 @media (min-width: 600px) {
   .aboutme_container {
     overflow: hidden;
@@ -664,6 +668,12 @@ img {
 .skills_list li img {
   height: 4em;
   width: 4em;
+  transition: all 1000ms;
+}
+
+.skills_list li img:hover {
+  height: 6em;
+  width: 6em;
 }
 
 .skills_list li span {
@@ -724,6 +734,12 @@ img {
 .education_card .csuf_image {
   height: 5em;
   width: 5em;
+  transition: all 1000ms;
+}
+
+.education_card .csuf_image:hover {
+  height: 7em;
+  width: 7em;
 }
 
 @media (min-width: 600px) {
