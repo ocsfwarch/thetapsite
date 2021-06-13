@@ -772,8 +772,9 @@ img {
   padding: 2px;
   background-color: white;
   border-radius: 0.5em;
-  border: 1px solid lightskyblue;
+  border: 1px solid silver;
   transition: all 1s linear;
+  box-shadow: 3px 4px 5px 3px #808080, inset 3px 4px 5px lightgray;
 }
 
 .work_history_card a {
@@ -827,6 +828,10 @@ img {
   font-size: 1.15em;
 }
 
+.work_history_company_address {
+  padding-left: 1em;
+}
+
 .work_history_job_date {
   font-style: italic;
 }
@@ -835,6 +840,11 @@ img {
   padding-left: 1em;
   font-size: 1.15em;
   font-weight: bold;
+}
+
+.work_history_responsibilities {
+  padding-left: 1em;
+  padding-top: 1em;
 }
 
 .work_history_show_control {

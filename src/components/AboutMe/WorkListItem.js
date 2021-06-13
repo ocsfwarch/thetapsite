@@ -1,15 +1,46 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function WorkListItem({ item }) {
   const [showMore, setShowMore] = useState(true);
   const [display, setDisplay] = useState("");
 
-  const showDetails = async () => {
-    if (showMore) {
-      setDisplay(formatDisplay());
+  useEffect(() => {
+    if (!showMore) {
+      const accomplishments = item.accomplishments.map(
+        (accomplishment, idx) => {
+          return <li key={idx}>{accomplishment}</li>;
+        }
+      );
+
+      const skills = item.skills.map((skill, idx) => {
+        return <li key={idx}>{skill}</li>;
+      });
+
+      const tools = item.tools.map((tool, idx) => {
+        return <li key={idx}>{tool}</li>;
+      });
+
+      setDisplay(
+        <>
+          <h1>Accomplishments</h1>
+          <ul>{accomplishments}</ul>
+          <h1>Skills</h1>
+          <ul>{skills}</ul>
+          <h1>Tools</h1>
+          <ul>{tools}</ul>
+        </>
+      );
     } else {
-      setDisplay("");
+      //setDisplay("");
     }
+  }, [showMore, item]);
+
+  const showDetails = async () => {
+    //if (showMore) {
+    //  setDisplay(formatDisplay());
+    //} else {
+    //  setDisplay("");
+    //}
     setShowMore(!showMore);
     const tempWorkListItem = document.getElementById(
       `work_list_item_${item.id}`
@@ -20,31 +51,28 @@ function WorkListItem({ item }) {
     }
   };
 
-  const formatDisplay = async () => {
+  const formatDisplay = () => {
     const accomplishments = item.accomplishments.map((accomplishment, idx) => {
       return <li key={idx}>{accomplishment}</li>;
     });
-    const sectionAccomplishments = <ul>{accomplishments}</ul>;
-
-    const responsibilities = <span>{item.responsibilities}</span>;
-    const sectionResponsibilities = <ul>{responsibilities}</ul>;
 
     const skills = item.skills.map((skill, idx) => {
       return <li key={idx}>{skill}</li>;
     });
-    const sectionSkills = <ul>{skills}</ul>;
 
     const tools = item.tools.map((tool, idx) => {
       return <li key={idx}>{tool}</li>;
     });
-    const sectionTools = <ul>{tools}</ul>;
+    //const sectionTools = <ul>{tools}</ul>;
 
     return (
       <>
-        {sectionAccomplishments}
-        {sectionResponsibilities}
-        {sectionSkills}
-        {sectionTools}
+        <h1>Accomplishments</h1>
+        <ul>{accomplishments}</ul>
+        <h1>Skills</h1>
+        <ul>{skills}</ul>
+        <h1>Tools</h1>
+        <ul>{tools}</ul>
       </>
     );
   };
@@ -69,39 +97,23 @@ function WorkListItem({ item }) {
           <span className="work_history_job_date">{item.job_start_date}</span>{" "}
           To:{" "}
           <span className="work_history_job_date">{item.job_stop_date}</span>]
-          <span className={showMore ? "display_none" : "display_all"}>
+          <span
+            className={
+              showMore
+                ? "display_none"
+                : "work_history_company_address display_all"
+            }
+          >
             {item.company_location}
           </span>
         </section>
       </section>
       <span className="work_history_job_title">{item.job_title}</span>
+      <span className="work_history_responsibilities">
+        {item.responsibilities}
+      </span>
       <section id="worklistdetails" className={showMore ? "" : "visible"}>
-        <h1>Accomplishments</h1>
-        {
-          <ul>
-            {item.accomplishments.map((accomplishment, idx) => {
-              return <li key={idx}>{accomplishment}</li>;
-            })}
-          </ul>
-        }
-        <h1>Responsibilities</h1>
-        {showMore ? "" : <span>{item.responsibilities}</span>}
-        <h1>Skills</h1>
-        {
-          <ul>
-            {item.skills.map((skill, idx) => {
-              return <li key={idx}>{skill}</li>;
-            })}
-          </ul>
-        }
-        <h1>Tools</h1>
-        {
-          <ul>
-            {item.tools.map((tool, idx) => {
-              return <li key={idx}>{tool}</li>;
-            })}
-          </ul>
-        }
+        {display}
       </section>
       <span className="work_history_show_control">
         <button
