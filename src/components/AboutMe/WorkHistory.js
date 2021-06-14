@@ -1,12 +1,12 @@
 import React from "react";
 import { AboutMeNav } from "./AboutMeNav";
-import { WorkList } from "./WorkList";
+import { WorkHistoryList } from "./WorkHistoryList";
 
 const WorkHistory = () => {
   return (
     <section className="aboutme_container">
       <AboutMeNav />
-      <WorkList />
+      <WorkHistoryList />
     </section>
   );
 };

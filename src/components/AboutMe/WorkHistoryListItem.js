@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function WorkListItem({ item }) {
+function WorkHistoryListItem({ item }) {
   const [showMore, setShowMore] = useState(true);
   const [display, setDisplay] = useState("");
 
@@ -47,7 +47,7 @@ function WorkListItem({ item }) {
     );
     if (tempWorkListItem) {
       console.log(`Scrolling`);
-      tempWorkListItem.scrollIntoView();
+      //tempWorkListItem.scrollIntoView();
     }
   };
 
@@ -132,4 +132,4 @@ function WorkListItem({ item }) {
   );
 }
 
-export { WorkListItem };
+export { WorkHistoryListItem };

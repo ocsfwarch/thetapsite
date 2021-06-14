@@ -566,7 +566,7 @@ img {
   width: 100%;
   background-color: white;
   padding-top: 5px;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
   -webkit-overflow-scrolling: touch;
 }
 
@@ -644,6 +644,7 @@ img {
 
 /* Skills */
 .skills_list {
+  overflow-y: scroll;
 }
 
 .skills_list ul {
@@ -694,6 +695,7 @@ img {
   align-items: center;
   background-color: white;
   border-top: 1px solid lightskyblue;
+  overflow-y: scroll;
 }
 
 .education_card {
@@ -767,6 +769,7 @@ img {
 
 /* Work History */
 .work_history_container {
+  flex: 1 1 auto;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -782,7 +785,7 @@ img {
   flex: 1 1 auto;
   display: flex;
   flex-flow: column nowrap;
-  height: 10em;
+  height: 13em;
   width: 90%;
   margin: 1em;
   padding: 2px;
