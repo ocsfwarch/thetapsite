@@ -86,7 +86,7 @@ function WorkHistoryListItem({ item }) {
           : "work_history_card work_history_card_expand"
       }
     >
-      <section id="workListItemTitle">
+      <section className="workListItemTitle">
         <section>
           <span className="work_history_company_name">
             <a href={item.company_url} target="blank" title={item.company_url}>
@@ -107,11 +107,11 @@ function WorkHistoryListItem({ item }) {
             {item.company_location}
           </span>
         </section>
+        <span className="work_history_job_title">{item.job_title}</span>
+        <span className="work_history_responsibilities">
+          {item.responsibilities}
+        </span>
       </section>
-      <span className="work_history_job_title">{item.job_title}</span>
-      <span className="work_history_responsibilities">
-        {item.responsibilities}
-      </span>
       <section id="worklistdetails" className={showMore ? "" : "visible"}>
         {display}
       </section>

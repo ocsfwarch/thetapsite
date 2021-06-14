@@ -10,6 +10,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 code {
@@ -769,22 +771,33 @@ img {
 
 /* Work History */
 .work_history_container {
-  flex: 1 1 auto;
+  /*flex: 1 1 auto;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   background-color: white;
   height: calc(100% - 4em);
-  width: 100%;
+  width: 100%;*/
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   border-top: 1px solid lightskyblue;
+}
+
+/* The flex was removed from the work_history_container
+   and this section was added so that the history items
+   would display correctly in Safari. */
+
+.work_history_list_display {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 .work_history_card {
   flex: 1 1 auto;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: flex-start;
   height: 13em;
   width: 90%;
   margin: 1em;
@@ -794,6 +807,11 @@ img {
   border: 1px solid silver;
   transition: all 1s linear;
   box-shadow: 3px 4px 5px 3px #808080, inset 3px 4px 5px lightgray;
+}
+
+.work_history_card_expand {
+  height: 30em;
+  transition: all 1s linear;
 }
 
 .work_history_card a {
@@ -823,19 +841,6 @@ img {
   line-height: 1.25em; /* 20 / 16 */
   width: 100%;
   background-color: skyblue;
-}
-
-.work_history_card_expand {
-  display: flex;
-  flex-flow: column nowrap;
-  height: 30em;
-  width: 90%;
-  margin: 1em;
-  padding: 2px;
-  background-color: white;
-  border-radius: 0.5em;
-  border: 1px solid lightskyblue;
-  transition: all 1s linear;
 }
 
 .work_history_card button {
@@ -872,18 +877,10 @@ img {
 }
 
 .work_history_show_more_btn {
-  color: black;
-}
-
-.work_history_show_more_btn:hover {
   color: green;
 }
 
 .work_history_show_less_btn {
-  color: black;
-}
-
-.work_history_show_less_btn:hover {
   color: red;
 }
 
@@ -898,6 +895,7 @@ img {
 }
 
 #worklistdetails {
+  flex: 1 1 auto;
   padding-left: 1em;
   overflow: hidden; /* Hide the element content, while height = 0 */
   height: 0.0000001;
@@ -906,12 +904,13 @@ img {
 }
 #worklistdetails.visible {
   overflow: auto;
-  height: auto;
+  /*height: auto;*/
   opacity: 1;
   transition: height 0ms 1s, opacity 1s 0ms;
 }
 
-#workListItemTitle {
+.workListItemTitle {
+  flex: 0 0 auto;
   display: flex;
   flex-flow: column nowrap;
 }

@@ -7,7 +7,11 @@ function WorkHistoryList() {
     return <WorkHistoryListItem key={item.id} item={item} />;
   });
 
-  return <div className="work_history_container">{items}</div>;
+  return (
+    <div className="work_history_container">
+      <section className="work_history_list_display">{items}</section>
+    </div>
+  );
 }
 
 export { WorkHistoryList };
