@@ -780,7 +780,6 @@ img {
   width: 100%;*/
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  border-top: 1px solid lightskyblue;
 }
 
 /* The flex was removed from the work_history_container
