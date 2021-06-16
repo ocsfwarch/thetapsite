@@ -26,10 +26,9 @@ export const ProjectListItem = ({ project }) => {
       </section>
 
       <section className="project_image">
-        <section className="project_image_container">
-          <img src={project.image} alt="" />
-        </section>
+        <img src={project.image} alt="" />
       </section>
+
       <section className="project_summary">
         <p>{project.summary}</p>
         <p>{techStack}</p>
