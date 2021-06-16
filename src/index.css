@@ -200,7 +200,7 @@ img {
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
-  background-color: yellow;
+  background-color: white;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   height: 100vh;
@@ -219,7 +219,7 @@ img {
   flex: 1 0 auto; /* Make the flex-shrink 0 so it displays correctly on the iphone */
   border: 0.0625em solid #a3a3a3; /* 1 / 16 , color hex gray64*/
   border-radius: 0.5em;
-  background-color: green;
+  background-color: white;
   margin: 1em;
   display: flex;
   flex-direction: column;
@@ -246,8 +246,12 @@ img {
   text-decoration: none;
 }
 
+.project_container .project_title a:hover {
+  color: green;
+}
+
 .project_container .project_image {
-  flex: 2 1 0;
+  flex: 1 1 0;
   display: flex;
   flex-flow: column nowrap;
   border-radius: 0.5em;
@@ -269,7 +273,7 @@ img {
   font-weight: 500;
   margin-left: 1em;
   margin-right: 1em;
-  text-align: center;
+  text-align: left;
   padding-bottom: 5px;
 }
 
@@ -283,6 +287,25 @@ img {
 }
 
 .project_container .project_summary img {
+  width: 35px;
+  height: 35px;
+}
+
+.project_container .project_stack {
+  flex: 0 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #00006f;
+  height: 40px;
+  background-color: white;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+
+.projects_container .project_stack img {
   width: 35px;
   height: 35px;
 }

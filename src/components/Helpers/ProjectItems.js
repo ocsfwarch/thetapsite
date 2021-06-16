@@ -3,7 +3,8 @@ const ProjectItems = [
     title: "CHAT Core News",
     image: "/images/Projects/chatcorenews_screenshot_desktop.png",
     href: "https://www.chatcorenews.com",
-    summary: "This is an RSS feed aggregator service. ",
+    summary:
+      "CHAT Core News is an RSS feed aggregator service. Users can view information from hundreds of sources including general news, technology, and health. This application was created for CHAT Data Services, LLC and is publically accessible.",
     stack: [
       { src: "/images/Techs/css.png", title: "CSS 3", alt: "css icon" },
       { src: "/images/Techs/html.png", title: "HTML 5", alt: "html icon" },
@@ -13,6 +14,30 @@ const ProjectItems = [
         src: "/images/Techs/postgresql.png",
         title: "PostgreSQL",
         alt: "postgres icon",
+      },
+      { src: "/images/Techs/npm.png", title: "npm", alt: "npm icon" },
+    ],
+  },
+  {
+    title: "Writer Access",
+    image: "/images/Projects/writer_access_screenshot.png",
+    href: "https://writeraccess.com/",
+    summary:
+      "WriterAccess is an application where content writers and content designers can provide services to customer requests for content generation. This application provides a number of tools that allow customers to find the writer and/or designer that most meets their desired criteria. This application requires a user registration and includes a fee-based service agreement. ",
+    stack: [
+      { src: "/images/Techs/css.png", title: "CSS 3", alt: "css icon" },
+      { src: "/images/Techs/html.png", title: "HTML 5", alt: "html icon" },
+      { src: "/images/Techs/vue.png", title: "Vue", alt: "vue icon" },
+      { src: "/images/Techs/js.png", title: "JavaScript", alt: "js icon" },
+      {
+        src: "/images/Techs/postgresql.png",
+        title: "PostgreSQL",
+        alt: "postgres icon",
+      },
+      {
+        src: "/images/Techs/sequelize.png",
+        title: "Sequelize",
+        alt: "sequelize icon",
       },
       { src: "/images/Techs/npm.png", title: "npm", alt: "npm icon" },
     ],
@@ -25,32 +50,10 @@ const ProjectItems = [
     stack: [
       { src: "/images/Techs/css.png", title: "CSS 3", alt: "css icon" },
       { src: "/images/Techs/html.png", title: "HTML 5", alt: "html icon" },
-      { src: "/images/Techs/react.png", title: "React", alt: "react icon" },
       { src: "/images/Techs/js.png", title: "JavaScript", alt: "js icon" },
-      {
-        src: "/images/Techs/postgresql.png",
-        title: "PostgreSQL",
-        alt: "postgres icon",
-      },
-      { src: "/images/Techs/npm.png", title: "npm", alt: "npm icon" },
-    ],
-  },
-  {
-    title: "OCSA Tracker",
-    image: "/images/Projects/tracker_screenshot.png",
-    href: "https://ocsfwarch.com/ocsatracker/",
-    summary: "This is a vehicle maintenance tracking application",
-    stack: [
-      { src: "/images/Techs/css.png", title: "CSS 3", alt: "css icon" },
-      { src: "/images/Techs/html.png", title: "HTML 5", alt: "html icon" },
-      { src: "/images/Techs/react.png", title: "React", alt: "react icon" },
-      { src: "/images/Techs/js.png", title: "JavaScript", alt: "js icon" },
-      {
-        src: "/images/Techs/postgresql.png",
-        title: "PostgreSQL",
-        alt: "postgres icon",
-      },
-      { src: "/images/Techs/npm.png", title: "npm", alt: "npm icon" },
+      { src: "/images/Techs/java_logo.jpg", title: "JAVA", alt: "java icon" },
+      { src: "/images/Techs/php.png", title: "PHP", alt: "php icon" },
+      { src: "/images/Techs/mysql.png", title: "MySQL", alt: "mysql icon" },
     ],
   },
   {

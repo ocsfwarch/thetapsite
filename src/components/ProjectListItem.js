@@ -2,10 +2,6 @@ import React from "react";
 
 export const ProjectListItem = ({ project }) => {
   //console.log(`path=${window.location.pathname}, Image = ${img}`)
-  const openProject = () => {
-    window.open(project.href, "_blank");
-  };
-
   const techStack = project.stack.map((item, idx) => {
     return (
       <img key={idx} src={item.src} title={item.title} alt={item.alt}></img>
@@ -31,13 +27,21 @@ export const ProjectListItem = ({ project }) => {
 
       <section className="project_summary">
         <p>{project.summary}</p>
-        <p>{techStack}</p>
       </section>
 
+      <section className="project_stack">{techStack}</section>
+
       <section className="project_footer">
-        <button type="button" className="btn btn-primary" onClick={openProject}>
-          Visit App
-        </button>
+        <a
+          href={project.href}
+          target="_blank"
+          rel="noreferrer"
+          title="Click to show the app"
+        >
+          <button type="button" className="btn btn-primary">
+            Visit App
+          </button>
+        </a>
       </section>
     </div>
   );
