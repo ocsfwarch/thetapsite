@@ -43,6 +43,24 @@ const ProjectItems = [
     ],
   },
   {
+    title: "iView",
+    image: "/images/Projects/iview_screenshot_4.png",
+    href: "https://ocsfwarch.com/handyman/",
+    summary: "This is an example of a basic services advertising web site.",
+    stack: [
+      { src: "/images/Techs/css.png", title: "CSS 3", alt: "css icon" },
+      { src: "/images/Techs/html.png", title: "HTML 5", alt: "html icon" },
+      { src: "/images/Techs/react.png", title: "React", alt: "react icon" },
+      { src: "/images/Techs/js.png", title: "JavaScript", alt: "js icon" },
+      {
+        src: "/images/Techs/postgresql.png",
+        title: "PostgreSQL",
+        alt: "postgres icon",
+      },
+      { src: "/images/Techs/npm.png", title: "npm", alt: "npm icon" },
+    ],
+  },
+  {
     title: "OCSA Text",
     image: "/images/Projects/text_screenshot.png",
     href: "https://ocsfwarch.com/ocsatext/",
