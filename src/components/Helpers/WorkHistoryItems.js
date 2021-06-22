@@ -104,7 +104,6 @@ const WorkHistoryItems = [
       "Apache",
       "Tomcat",
       "Java SE 8",
-      "PHP 7",
       "Eclipse",
       "MySQL 5",
       "TCP/IP",
