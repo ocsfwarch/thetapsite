@@ -53,15 +53,13 @@ p {
 }
 
 .app_header_banner {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  flex: 0 0 auto;
   width: 100%;
-  font: 18px/1.9em "librebaskerville-regular", serif;
+  font-size: 1.85em;
+  font-weight: bold;
   color: #00006f;
-  text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
   border-bottom: 1px skyblue solid;
+  text-align: center;
 }
 
 .app_header_menu {
@@ -72,10 +70,6 @@ p {
   background-color: white;
   border-radius: 0.25em;
   border-bottom: 1px skyblue solid;
-}
-
-.app_header_menu_hide {
-  display: none;
 }
 
 .navContent {
