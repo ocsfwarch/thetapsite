@@ -4,7 +4,7 @@ const WorkHistoryItems = [
     company_name: "Chegg",
     company_location: "San Francisco, CA",
     company_url: "https://www.chegg.com/",
-    job_title: "Technical Expert",
+    job_title: "Technical Expert - Software Engineering",
     job_start_date: "2019",
     job_stop_date: "Present",
     accomplishments: [
@@ -104,7 +104,6 @@ const WorkHistoryItems = [
       "Apache",
       "Tomcat",
       "Java SE 8",
-      "PHP 7",
       "Eclipse",
       "MySQL 5",
       "TCP/IP",
