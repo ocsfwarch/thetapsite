@@ -23,6 +23,14 @@ p {
   font-size: 1.1rem;
 }
 
+img {
+  /*max-height:100%;*/
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 0.5em;
+}
+
 /* Main Display */
 
 .app_container {
@@ -103,74 +111,49 @@ p {
   padding-top: 5px;
 }
 
-.intro_container .display_img {
-  flex: 1.25 1 auto;
+.intro_container .intro_img_container {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  height: 50%;
   width: 98%;
   padding-left: 5px;
   padding-right: 5px;
+  padding-bottom: 5px;
   background-color: white;
   border-bottom: 1px skyblue solid;
 }
 
-.intro_container .display_img .display_img_image {
-  flex: 1 1 auto;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-}
-
-.intro_container .display_img .display_img_caption {
-  flex: 0 0 auto;
-  height: 2em;
-  background-color: white;
-}
-
-.intro_container .intro_content {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  width: 100%;
-  background-color: green;
-}
-
-.intro_container .intro_content .banner {
-  width: 100%;
-  text-align: center;
-}
-
-.intro_container .intro_content .content {
-  width: 100%;
-  background-color: white;
-  text-align: left;
-  padding-right: 8px;
-}
-
-.intro_container .intro_content .content p {
-  padding: 1em;
-  font: 1.7em "librebaskerville-regular", serif;
-  color: #00006f;
-  text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
-}
-
-.intro_container .caption {
+.intro_container .intro_img_container .caption {
   font-size: 0.75em;
   color: blue;
   background-color: white;
   text-align: center;
 }
 
-img {
-  /*max-height:100%;*/
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  border-radius: 0.5em;
+.intro_container .intro_content_container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  /*background-color: green;*/
+}
+
+.intro_container .intro_content_container .banner {
+  width: 100%;
+  text-align: center;
+}
+
+.intro_container .intro_content_container .content {
+  width: 100%;
+  background-color: white;
+  text-align: left;
+  padding-right: 8px;
+}
+
+.intro_container .intro_content_container .content p {
+  padding: 1em;
+  font: 1.7em "librebaskerville-regular", serif;
+  color: #00006f;
+  text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
 }
 
 @media (min-width: 1000px) {
@@ -179,11 +162,11 @@ img {
     justify-content: stretch;
   }
 
-  .intro_container .display_img {
+  .intro_container .intro_img_container {
     height: 80%;
   }
 
-  .intro_container .intro_content {
+  .intro_container .intro_content_container {
     height: 100%;
     justify-content: space-evenly;
   }
@@ -325,7 +308,7 @@ img {
 }
 
 @media (min-width: 1000px) {
-  /*.intro_container .display_img{
+  /*.intro_container .intro_img_container{
     height:40%;
     width:100%;
   }*/

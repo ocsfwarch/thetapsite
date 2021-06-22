@@ -5,15 +5,11 @@ import pic from "../images/IMG_9450_small.png";
 export const Main = () => {
   return (
     <div className="intro_container">
-      <section className="display_img">
-        <section className="display_img_image">
-          <img src={pic} alt="display image" />
-        </section>
-        <section className="display_img_caption">
-          <span className="caption">Grand Canyon AZ from Plateau Point</span>
-        </section>
+      <section className="intro_img_container">
+        <img src={pic} alt="display" />
+        <span className="caption">Grand Canyon AZ from Plateau Point</span>
       </section>
-      <section className="intro_content">
+      <section className="intro_content_container">
         <section className="banner">
           <h1>Welcome to my World Wide Web space</h1>
         </section>
