@@ -165,10 +165,6 @@ img {
 }
 
 @media (min-width: 1000px) {
-  .intro_container {
-    flex-flow: row nowrap;
-  }
-
   .intro_container .intro_img_container {
     height: 80%;
   }
@@ -575,7 +571,7 @@ img {
   width: 100%;
   background-color: white;
   padding-top: 5px;
-  /*overflow-y: scroll;*/
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -592,19 +588,12 @@ img {
 
 .aboutme_container .aboutme_content .img_sect {
   flex: 1 1 auto;
+  display: flex;
+  align-items: center;
   height: 153px;
   width: 153px;
   background-color: transparent;
   padding-top: 0.5em;
-}
-
-.aboutme_container .aboutme_content .img_sect .img_display {
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
 }
 
 .aboutme_container .aboutme_content .intro_sect {
