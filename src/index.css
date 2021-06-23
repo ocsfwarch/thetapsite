@@ -53,6 +53,7 @@ img {
 }
 
 .app_header {
+  flex: 1 1 auto;
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
@@ -74,6 +75,7 @@ img {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
+  align-items: center;
   width: 100%;
   background-color: white;
   border-radius: 0.25em;
@@ -101,6 +103,7 @@ img {
 
 /* Main Display - Introduction */
 .intro_container {
+  flex: 1 1 auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -109,17 +112,20 @@ img {
   width: 100%;
   background-color: white;
   padding-top: 5px;
+  overflow: auto;
 }
 
 .intro_container .intro_img_container {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  height: 40%;
   width: 98%;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
   background-color: white;
-  border-bottom: 1px skyblue solid;
+  /*border-bottom: 1px skyblue solid;*/
 }
 
 .intro_container .intro_img_container .caption {
@@ -130,9 +136,11 @@ img {
 }
 
 .intro_container .intro_content_container {
+  flex: 1 1 auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
+  height: 60%;
   width: 100%;
   /*background-color: green;*/
 }
@@ -146,12 +154,12 @@ img {
   width: 100%;
   background-color: white;
   text-align: left;
-  padding-right: 8px;
 }
 
 .intro_container .intro_content_container .content p {
-  padding: 1em;
-  font: 1.7em "librebaskerville-regular", serif;
+  padding-right: 0.5em;
+  padding-left: 1em;
+  font: 1.35em "librebaskerville-regular", serif;
   color: #00006f;
   text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
 }
@@ -159,7 +167,6 @@ img {
 @media (min-width: 1000px) {
   .intro_container {
     flex-flow: row nowrap;
-    justify-content: stretch;
   }
 
   .intro_container .intro_img_container {
@@ -167,8 +174,7 @@ img {
   }
 
   .intro_container .intro_content_container {
-    height: 100%;
-    justify-content: space-evenly;
+    height: 80%;
   }
 }
 

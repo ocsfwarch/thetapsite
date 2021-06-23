@@ -13,13 +13,13 @@ export const Main = () => {
         <section className="banner">
           <h1>Welcome to my World Wide Web space</h1>
         </section>
-        <article className="content">
+        <section className="content">
           <p>
             My name is Terry Partridge. I am a Software Engineer based in
             Mission Viejo, California. This is my space, I hope you find it
             useful.
           </p>
-        </article>
+        </section>
       </section>
     </div>
   );
