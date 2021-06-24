@@ -2,6 +2,10 @@
 
 `The TAP Site` is my personal World Wide Web application. It was created to function as a portfolio as well as including space to display personal projects that I have worked on.
 
+## Application Image
+
+![Component Layout](https://github.com/ocsfwarch/thetapsite/blob/main/Project_Docs/app_image.png)
+
 ## Areas of Interest
 
 | Section  | Description                                                                                  |
