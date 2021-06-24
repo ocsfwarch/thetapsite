@@ -13,4 +13,4 @@
 ## Design and Architecture
 
 - Component Layout Diagram
-  ![Component Layout](https://github.com/ocsfwarch/thetapsite/blob/master/Project_Docs/component_layout.png)
+  ![Component Layout](https://github.com/ocsfwarch/thetapsite/blob/main/Project_Docs/component_layout.png?raw=true)
