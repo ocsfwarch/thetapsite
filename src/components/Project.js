@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ProjectListItem = ({ project }) => {
+export const Project = ({ project }) => {
   const techStack = project.stack.map((item, idx) => {
     return (
       <img key={idx} src={item.src} title={item.title} alt={item.alt}></img>
