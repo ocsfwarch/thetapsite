@@ -247,7 +247,7 @@ img {
 .project_container .project_summary {
   flex: 1 1 0;
   color: #00006f;
-  background-color: white;
+  background-color: transparent;
   font-size: 1em; /* 18 / 16 */
   line-height: 1.25em; /* 20 / 16 */
   font-weight: 500;
@@ -272,14 +272,14 @@ img {
 }
 
 .project_container .project_stack {
-  flex: 0 0 0;
+  flex: 0 0 auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   color: #00006f;
   height: 40px;
-  background-color: white;
+  background-color: transparent;
   margin-left: 1em;
   margin-right: 1em;
   text-align: center;
