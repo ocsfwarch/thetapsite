@@ -9,17 +9,15 @@ const AboutMeNav = () => {
           <section>
             <ul className="navLinks">
               <li>
-                <Link to={`${process.env.PUBLIC_URL}/AboutMe/WorkHistory`}>
+                <Link to={`${process.env.PUBLIC_URL}/WorkHistory`}>
                   Work History
                 </Link>
               </li>
               <li>
-                <Link to={`${process.env.PUBLIC_URL}/AboutMe/Skills`}>
-                  Skills
-                </Link>
+                <Link to={`${process.env.PUBLIC_URL}/Skills`}>Skills</Link>
               </li>
               <li>
-                <Link to={`${process.env.PUBLIC_URL}/AboutMe/Education`}>
+                <Link to={`${process.env.PUBLIC_URL}/Education`}>
                   Education
                 </Link>
               </li>

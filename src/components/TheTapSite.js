@@ -40,15 +40,15 @@ function TheTapSite() {
               component={AboutMe}
             />
             <Route
-              path={`${process.env.PUBLIC_URL}/AboutMe/WorkHistory`}
+              path={`${process.env.PUBLIC_URL}/WorkHistory`}
               component={WorkHistory}
             />
             <Route
-              path={`${process.env.PUBLIC_URL}/AboutMe/Skills`}
+              path={`${process.env.PUBLIC_URL}/Skills`}
               component={Skills}
             />
             <Route
-              path={`${process.env.PUBLIC_URL}/AboutMe/Education`}
+              path={`${process.env.PUBLIC_URL}/Education`}
               component={Education}
             />
             <Redirect to={`${process.env.PUBLIC_URL}/`} />
