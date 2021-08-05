@@ -7,13 +7,13 @@ export const NavBar = () => {
       <section>
         <ul className="navLinks">
           <li>
-            <Link to="/">Home</Link>
+            <Link to={`${process.env.PUBLIC_URL}/`}>Home</Link>
           </li>
           <li>
-            <Link to="/Projects">Projects</Link>
+            <Link to={`${process.env.PUBLIC_URL}/Projects`}>Projects</Link>
           </li>
           <li>
-            <Link to="/AboutMe">About Me</Link>
+            <Link to={`${process.env.PUBLIC_URL}/AboutMe`}>About Me</Link>
           </li>
         </ul>
       </section>

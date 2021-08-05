@@ -22,19 +22,36 @@ function TheTapSite() {
           <Switch>
             <Route
               exact
-              path="/"
+              path={`${process.env.PUBLIC_URL}/`}
               render={() => (
                 <React.Fragment>
                   <Main />
                 </React.Fragment>
               )}
             />
-            <Route exact path="/Projects" component={Projects} />
-            <Route exact path="/AboutMe" component={AboutMe} />
-            <Route path="/AboutMe/WorkHistory" component={WorkHistory} />
-            <Route path="/AboutMe/Skills" component={Skills} />
-            <Route path="/AboutMe/Education" component={Education} />
-            <Redirect to="/" />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/Projects`}
+              component={Projects}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/AboutMe`}
+              component={AboutMe}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/AboutMe/WorkHistory`}
+              component={WorkHistory}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/AboutMe/Skills`}
+              component={Skills}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/AboutMe/Education`}
+              component={Education}
+            />
+            <Redirect to={`${process.env.PUBLIC_URL}/`} />
           </Switch>
         </div>
       </div>
