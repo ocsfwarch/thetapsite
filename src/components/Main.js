@@ -1,5 +1,4 @@
 import React from "react";
-//import displayImg from '../images/IMG_9450.JPG';
 import pic from "../images/IMG_9450_small.png";
 
 export const Main = () => {
