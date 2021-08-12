@@ -83,6 +83,23 @@ const ProjectItems = [
       { src: "/images/Techs/github.png", title: "GitHub", alt: "GitHub icon" },
     ],
   },
+  {
+    type: "general",
+    title: "TapGiphy",
+    image: "/images/Projects/search_page.png",
+    href: "https://www.thetapsite.com/tap_giphy/",
+    git: "https://github.com/ocsfwarch/tap_giphy",
+    summary:
+      "This project was created using React. The purpose of this project is to create a GIF search engine using Giphy's public API.",
+    stack: [
+      { src: "/images/Techs/css.png", title: "CSS 3", alt: "css icon" },
+      { src: "/images/Techs/html.png", title: "HTML 5", alt: "html icon" },
+      { src: "/images/Techs/react.png", title: "React", alt: "react icon" },
+      { src: "/images/Techs/js.png", title: "JavaScript", alt: "js icon" },
+      { src: "/images/Techs/npm.png", title: "npm", alt: "npm icon" },
+      { src: "/images/Techs/github.png", title: "GitHub", alt: "GitHub icon" },
+    ],
+  },
   //{
   //  title: "OCSA Text",
   //  image: "/images/Projects/text_screenshot.png",
