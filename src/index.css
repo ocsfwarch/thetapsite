@@ -164,17 +164,21 @@ img {
   text-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
 }
 
-@media (min-width: 1000px) {
-  .intro_container .intro_img_container {
-    height: 80%;
-  }
-
-  .intro_container .intro_content_container {
-    height: 80%;
-  }
+/* Projects */
+/* AboutMe */
+.project_view_container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  padding-top: 5px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Projects */
 .projects_container {
   display: flex;
   flex-flow: column nowrap;
@@ -190,8 +194,6 @@ img {
   border: solid black 1px;
   border-radius: 0.5em;
   z-index: 20;
-  transition-timing-function: ease;
-  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .project_container {
@@ -203,7 +205,7 @@ img {
   display: flex;
   flex-direction: column;
   /*align-items: stretch;*/
-  width: calc(100% - 2em);
+  /*width: calc(100% - 2em);*/
   /*max-width: 30em;*/
   box-shadow: 5px 5px 5px 3px #808080;
 }
@@ -308,22 +310,6 @@ img {
   line-height: 1.25em;
   padding: 2px;
   /*text-align: right;*/
-}
-
-@media (min-width: 1000px) {
-  /*.intro_container .intro_img_container{
-    height:40%;
-    width:100%;
-  }*/
-
-  .projects_container {
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  .project_container {
-    width: 40%;
-  }
 }
 
 /* Standard Buttons */
@@ -614,31 +600,31 @@ img {
   border: 1px skyblue solid;
 }
 
-.aboutme_menu_display {
+.menu_display {
   flex: 0 0 auto;
   height: 4em;
   width: 100%;
 }
 
-.aboutme_menu_display .navLinks {
+.menu_display .navLinks {
   text-align: center;
 }
 
-@media (min-width: 1000px) {
-  .aboutme_container {
-    overflow: hidden;
-  }
+.menu_display button {
+  color: #551a8b;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
 
-  .aboutme_container .aboutme_content {
-    flex-flow: row nowrap;
-  }
+.menu_display button:hover {
+  color: green;
+}
 
-  .aboutme_container .aboutme_content .img_sect {
-    flex: 0 0 auto;
-    height: 306px;
-    width: 306px;
-    padding: 0.5em;
-  }
+.menu_display .use_underline {
+  text-decoration: underline;
 }
 
 /* Skills */
@@ -764,17 +750,47 @@ img {
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
   }
+
+  .projects_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro_container .intro_img_container {
+    height: 80%;
+  }
+
+  .intro_container .intro_content_container {
+    height: 80%;
+  }
+
+  .aboutme_container {
+    overflow: hidden;
+  }
+
+  .aboutme_container .aboutme_content {
+    flex-flow: row nowrap;
+  }
+
+  .aboutme_container .aboutme_content .img_sect {
+    flex: 0 0 auto;
+    height: 306px;
+    width: 306px;
+    padding: 0.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* Work History */
 .work_history_container {
-  /*flex: 1 1 auto;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  background-color: white;
-  height: calc(100% - 4em);
-  width: 100%;*/
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }

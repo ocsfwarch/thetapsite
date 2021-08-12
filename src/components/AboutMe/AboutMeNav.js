@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AboutMeNav = () => {
   return (
-    <section className="aboutme_menu_display">
+    <section className="menu_display">
       <section className="app_header_menu">
         <nav className="navContent">
           <section>

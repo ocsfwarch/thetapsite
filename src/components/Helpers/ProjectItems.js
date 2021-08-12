@@ -1,5 +1,6 @@
 const ProjectItems = [
   {
+    type: "enterprise",
     title: "CHAT Core News",
     image: "/images/Projects/chatcorenews_screenshot_desktop.png",
     href: "https://www.chatcorenews.com",
@@ -21,6 +22,7 @@ const ProjectItems = [
     ],
   },
   {
+    type: "enterprise",
     title: "Writer Access",
     image: "/images/Projects/writer_access_screenshot.png",
     href: "https://writeraccess.com/",
@@ -47,6 +49,7 @@ const ProjectItems = [
     ],
   },
   {
+    type: "enterprise",
     title: "iView²",
     image: "/images/Projects/iview_screenshot.png",
     href: "",
@@ -64,6 +67,7 @@ const ProjectItems = [
     ],
   },
   {
+    type: "general",
     title: "Tic Tac Toe",
     image: "/images/Projects/tic_tac_toe.png",
     href: "https://thetapsite.com/tic_tac_toe/index.html",

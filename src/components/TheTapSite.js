@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { Header } from "./Header";
 import { Main } from "./Main";
-import { Projects } from "./Projects";
+import { Projects } from "./Projects/Projects";
 import { AboutMe } from "./AboutMe/AboutMe";
 import { WorkHistory } from "./AboutMe/WorkHistory";
 import { Skills } from "./AboutMe/Skills";
